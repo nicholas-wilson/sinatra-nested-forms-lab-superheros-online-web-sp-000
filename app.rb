@@ -1,6 +1,6 @@
 class App < Sinatra::Base
 
   get '/' do
-    erb :index
+    "Yo whaddup"
   end
 end
