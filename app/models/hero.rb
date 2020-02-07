@@ -17,6 +17,7 @@ class Hero
     the_team = Hero.all.collect do |hero|
       hero.team == team
     end
+    the_team
   end
 
   def self.all
