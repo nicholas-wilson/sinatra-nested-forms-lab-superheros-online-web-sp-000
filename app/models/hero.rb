@@ -9,6 +9,6 @@ class Hero
 
   def self.make_heroes(heroes_hash)
     heroes_hash.each do |hero|
-      
+
   end
 end
