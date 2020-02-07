@@ -14,7 +14,8 @@ class Hero
       guy = Hero.new(hero_info)
       guy.team = team
     end
-  the_team =
+  the_team = Hero.all.collect do |hero|
+    hero.team == team
   end
 
   def self.all
