@@ -10,6 +10,6 @@ class App < Sinatra::Base
 
   post '/teams' do
     @team = Team.new(params[:team])
-    " #{@team.heroes}.to_s"
+    " #{@team.heroes[0].name}"
   end
 end
