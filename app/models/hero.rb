@@ -1,5 +1,5 @@
 class Hero
-  attr_accessor :name, :power, :bio
+  attr_accessor :name, :power, :bio, :team
   @@all = []
 
   def initialize(attributes)
@@ -9,8 +9,15 @@ class Hero
     @@all << self
   end
 
-  def self.make_heroes(heroes_hash)
+  def self.make_heroes_with_team(heroes_hash, team)
     heroes_hash.each do |hero_info|
-      Hero.new(hero_info)
+      guy = Hero.new(hero_info)
+      guy.team = team
+    end
+  the_team =
+  end
+
+  def self.all
+    @@all
   end
 end
