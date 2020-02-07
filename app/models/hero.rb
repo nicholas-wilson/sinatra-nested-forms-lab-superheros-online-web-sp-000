@@ -16,6 +16,8 @@ class Hero
     end
     the_team = Hero.all.collect do |hero|
       if hero.team == team
+        hero
+      end
     end
     the_team
   end
