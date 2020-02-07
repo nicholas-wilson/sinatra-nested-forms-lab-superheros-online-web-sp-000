@@ -8,4 +8,7 @@ class App < Sinatra::Base
     erb :create_team_and_heroes
   end
 
+  post '/teams' do
+    "WE MADE IT"
+  end
 end
