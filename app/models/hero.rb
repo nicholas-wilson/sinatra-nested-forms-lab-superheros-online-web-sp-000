@@ -14,12 +14,12 @@ class Hero
       guy = Hero.new(hero_info)
       guy.team = team
     end
-    the_team = Hero.all.collect do |hero|
+    @team = Hero.all.collect do |hero|
       if hero.team == team
         hero
       end
     end
-    the_team
+    @team
   end
 
   def self.all
