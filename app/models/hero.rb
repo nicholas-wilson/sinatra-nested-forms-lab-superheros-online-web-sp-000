@@ -8,7 +8,7 @@ class Hero
   end
 
   def self.make_heroes(heroes_hash)
-    heroes_hash.each do |hero|
-
+    heroes_hash.each do |hero_info|
+      Hero.new(hero_info)
   end
 end
