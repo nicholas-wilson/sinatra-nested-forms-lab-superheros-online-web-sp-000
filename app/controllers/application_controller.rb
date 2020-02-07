@@ -10,5 +10,6 @@ class App < Sinatra::Base
 
   post '/teams' do
     "WE MADE IT"
+    " #{params}"
   end
 end
